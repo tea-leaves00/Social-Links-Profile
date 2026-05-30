@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Inter";
   src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-  font-weight: 400 700;
+  font-weight: 300 700;
 }
 
 * {
@@ -11,10 +11,73 @@
 }
 
 body {
-  min-height: 100vh;
   font-family: "Inter", sans-serif;
   background-color: hsl(0, 0%, 8%);
+}
+
+main {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  width: min(100% - 2rem, 350px);
+  padding: 30px;
+}
+
+.card img {
+  border-radius: 100px;
+  margin-bottom: 25px;
+}
+
+.card h1 {
+  font-weight: 450;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 8px;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 30px;
+}
+
+.description {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: hsl(0, 0%, 20%);
+  padding: 10px 80px; 
+  border-radius: 6px;
+  text-align: center;
+}
+
+li:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 450;
+}
+
+a:hover {
+  color: hsl(0, 0%, 20%);
+}
+
+
